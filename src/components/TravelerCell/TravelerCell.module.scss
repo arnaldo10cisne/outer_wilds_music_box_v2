@@ -1,0 +1,45 @@
+.cellContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    transform 0.2s;
+
+  &:hover {
+    background-color: #f1f1f1;
+    // transform: translateY(-5px);
+  }
+}
+
+.playing {
+  background-color: #e0ffe0;
+  border-color: #4caf50;
+}
+
+.photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.statusContainer {
+  margin-top: 16px;
+  font-size: 1.2rem;
+  color: #333;
+}
