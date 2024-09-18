@@ -1,14 +1,16 @@
 import React from "react";
-import "./App.css";
 import TravelerCell from "./components/TravelerCell/TravelerCell";
-import { mockTravelerList } from "./models";
+import { mockTravelerList } from "./utilities/models";
+import styles from "./App.module.scss";
 
 function App() {
   return (
-    <div className="App">
-      {mockTravelerList.map((traveler) => (
-        <TravelerCell traveler={traveler} />
-      ))}
+    <div className={`${styles.app}`}>
+      <div className={`${styles.cardsContainer}`}>
+        {mockTravelerList.map((traveler) => (
+          <TravelerCell traveler={traveler} />
+        ))}
+      </div>
     </div>
   );
 }

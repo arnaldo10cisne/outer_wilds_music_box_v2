@@ -1,4 +1,19 @@
+@import "../../utilities/variables";
+
 .cellContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  background-color: $color_3;
+}
+
+.innerCellContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,13 +31,13 @@
 
   &:hover {
     background-color: #f1f1f1;
-    // transform: translateY(-5px);
+    transform: translateY(-5px);
   }
 }
 
 .playing {
-  background-color: #e0ffe0;
-  border-color: #4caf50;
+  background-color: #e7c192;
+  border-color: $color_9;
 }
 
 .photo {
@@ -39,7 +54,14 @@
 }
 
 .statusContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 16px;
   font-size: 1.2rem;
-  color: #333;
+  color: $color_7;
+}
+
+.volumeSlider {
+  accent-color: $color_8;
 }
